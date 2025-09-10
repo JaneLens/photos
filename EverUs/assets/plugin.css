@@ -1,0 +1,97 @@
+
+        .stats-box {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .stat-item {
+            width: 100%;
+            background: #f8f8f8;
+            padding: 10px 15px;
+            border-radius: 4px;
+            border-left: 4px solid #16baaa;
+        }
+        .stat-item.blue{
+            border-left: 4px solid #1e9fff!important;
+        }
+        .stat-item.red{
+            border-left: 4px solid #ff5722!important;
+        }
+        .stat-item h3 {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .stat-item span {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .tab-buttons {
+            display: flex;
+            border-bottom: 1px solid #e2e2e2;
+            margin-bottom: 1rem;
+        }
+        .tab-btn {
+            padding: 10px 20px;
+            background: #f8f8f8;
+            border: 1px solid #e2e2e2;
+            border-bottom: none;
+            border-radius: 4px 4px 0 0;
+            margin-right: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .tab-btn.active {
+            background: #1E9FFF;
+            color: white;
+            border-color: #1E9FFF;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .action-buttons {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #friend-table, #task-table {
+            border: 1px solid #e6e6e6;
+            border-radius: 4px;
+        }
+        .avatar-img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .status-badge {
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+        .status-completed {
+            background: #5FB878;
+            color: white;
+        }
+        .status-pending {
+            background: #FFB800;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .stats-box {
+                flex-direction: column;
+            }
+            .action-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .action-buttons .layui-btn {
+                margin-right: 0;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        }
